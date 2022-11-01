@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: Tests.ShoppingCartTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.074 sec <<< FAILURE!
+Tests.ShoppingCartTest.testAddingItemToShoppingCart()  Time elapsed: 0.074 sec  <<< FAILURE!
+java.lang.IllegalStateException: No webdriver is bound to current thread: 1. You need to call open(url) first.
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.lambda$getWebDriver$1(WebDriverThreadLocalContainer.java:138)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.codeborne.selenide.impl.WebDriverThreadLocalContainer.getWebDriver(WebDriverThreadLocalContainer.java:137)
+	at com.codeborne.selenide.WebDriverRunner.getWebDriver(WebDriverRunner.java:112)
+	at com.codeborne.selenide.impl.StaticDriver.getWebDriver(StaticDriver.java:51)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:40)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:33)
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:118)
+	at com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:110)
+	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsInteractable(WebElementSource.java:147)
+	at com.codeborne.selenide.commands.Click.findElement(Click.java:46)
+	at com.codeborne.selenide.commands.Click.execute(Click.java:28)
+	at com.codeborne.selenide.commands.Click.execute(Click.java:21)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:157)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:130)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:82)
+	at jdk.proxy1/jdk.proxy1.$Proxy0.click(Unknown Source)
+	at Screens.LandingScreen.skipToTry(LandingScreen.java:14)
+	at Tests.ShoppingCartTest.testAddingItemToShoppingCart(ShoppingCartTest.java:17)
+

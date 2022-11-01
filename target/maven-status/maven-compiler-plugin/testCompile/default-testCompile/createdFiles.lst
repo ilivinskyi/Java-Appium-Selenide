@@ -1,0 +1,14 @@
+Tests/ShoppingCartTest.class
+Screens/LandingScreen.class
+Utils/infrastructure/SuiteConfiguration.class
+Utils/ui/UIHelpers.class
+Tests/BaseTest.class
+Utils/ui/UIHelpers$1.class
+Utils/infrastructure/AppiumServer.class
+Utils/drivers/AndroidDriverManager.class
+Utils/infrastructure/PropertyLoader.class
+Screens/ShoppingCart.class
+Utils/drivers/DriverFactory.class
+Screens/BaseScreen.class
+Screens/MainScreen.class
+Utils/drivers/DefaultDriverManager.class
